@@ -1,0 +1,26 @@
+This is a review of the manuscript by Cohen et al entitled "Equipotential Lab". I recommend major revisions. The manuscript goal is to observe and analyze the distribution of electric potential around conducting wires and to locate corresponding equipotential regions. The major flaw of this manuscript is that they never show the equipotentials or electric fields, thus failing in their stated goal. 
+
+Title: The title, "Equipotential Lab" sounds like a generic name for a handout in a high school physics class. The authors should pick a title that is more enticing and gets at why someone would want to read their paper.
+
+Abstract: Two things stood out in the abstract as of concern. The authors claim to measure potential by "adjusting the voltage at each measurement location". This sounds like something sketchy. Also, they attribute the "discrepancies" to "human error", which sounds like a red flag for something didn't work.
+
+The authors should supply keywords after the abstract.
+
+Introduction: Equations should be numbered. The opening statement of the introduction "electric field is a field created by the attraction and repulsion of charges that inhabit the field" sounds odd and not quite the definition of the field; charges do not "inhabit" (live in) a field also.
+
+No attempt is made to relate the work to an application, device, or technique. It is never really explained why there is salt water in a tupperware. There is no answer to the question "So what?" Why should we care about V or E field?
+
+Methods and materials: The authors alternate between giving trivial details (graph paper) versus not giving enough detail (nwhat power supply, what meter, how much salt, why is there salty water in a tray? what are dimensions of the importnt geometry, how are wires set up, etc). It appears like the authors recognize that this situation includes a small amount of current flow J=\sigma E due to the conductivity of the water but why? Why is the water blue?
+
+The setup figure looks cute but the key information on where points 1-9 are in space is not given. Thus it is impossible to interpret their later findings to see if they actually have found equipotentials, electric field, etc correctly.
+
+Results:
+The authors mix results and discussion as (Data and Analysis). This is probably not appropriate for this type of physics work, please keep results, verifiable facts of what you saw, separate from discussion of the meaning and interpretation of what you saw.
+
+A table is given at different input voltages but without knowing the location of points 1-9 it is impossible to interpret. The "2D" (really not) figure in Fig 4 is not an equipotential map as it just colors along several un specified points.
+
+Discussion: There is not discussion of equipotential nor E field because these are not shown!
+
+Acknowledgemetns are missing; the authors should include the individual contributions here rather than in the author listing at the top of the paper.
+
+REferences are missing.
