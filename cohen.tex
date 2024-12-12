@@ -16,12 +16,12 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 
-\title{An experimental study on electric potential and equipotential regions}
+\title{Visualizing Electric Potential: Mapping Equipotential Lines in a Conductive Water Tray}
 \author{Ryan Cohen\thanks{Author for correspondence: 425rcohen@frhsd.com}, Shreyas Musuku, Justin Hammer, Eshan Handique,\\Nirvik Patel, Dilan Gandhi, and Nathan Gershteyn\thanks{Authors are with the Science \& Engineering Magnet Program, Manalapan High School, 20 Church Lane, Englishtown, NJ 07726, USA}}
 \date{\today}
-\markboth{Journal of Science \& Engineering, Vol.~1, No.~2,~December 11, 2024}{Cohen \MakeLowercase{\textit{et al.}}: An experiental study on equipotential regions}
+\markboth{Journal of Science \& Engineering, Vol.~1, No.~2,~December 13, 2024}{Cohen \MakeLowercase{\textit{et al.}}: Visualizing Electric Potential}
 \setcounter{page}{9}
-\newcommand{\keywords}{electric potential, equipotential lines, electric field visualizations, saline conductive medium, electrostatics, electric field mapping, data visualization in electrostatics, gel electrophoresis, electric field dynamics}
+\newcommand{\keywords}{electric potential, equipotential lines, electric fields, saline solution, conductive medium, voltage mapping, potential gradient}
 \makeatletter
 \AtBeginDocument{
 \hypersetup{%
@@ -69,7 +69,7 @@ pdfkeywords={\keywords}}}
 \maketitle
 
 \begin{abstract}
-The goal of this experiment was to observe and analyze the distribution of electric potential around conducting wires and to locate the corresponding equipotential regions. We were able to achieve this by using salt water as a conductive medium, we then measured the potential difference at various set points by adjusting the voltage at each measurement location. Our observations revealed that the equipotential regions in the center were equidistant from both voltage sources, and the potential change along each parallel path, at equal distances from its nearest voltage source, was consistent. While some minor discrepancies between the expected and actual results can be attributed to human error, the experiment effectively demonstrated the properties of electric potential and provided a reliable confirmation of the relationship between electric potential and equipotential lines.
+The goal of this experiment was to study the distribution of electric potential around conducting wire configurations and identify the corresponding equipotential regions. Using a water tray with a saline solution as the conductive medium, we measured the potential difference at defined points on a coordinate grid by connecting the wires to a power supply and using a multimeter to record voltages at various locations. Our observations indicated that equipotential regions were centered somewhat equidistantly between the voltage sources, with a mostly consistent rate of potential change along paths parallel to the sources. Some discrepancies between expected and observed values were noted, likely due to limitations in the measurement equipment and procedural inconsistencies. Despite these challenges, the experiment successfully demonstrated the properties of electric potential and equipotential lines, providing a clear visual representation of their relationship with the electric field.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -77,74 +77,130 @@ The goal of this experiment was to observe and analyze the distribution of elect
 \end{IEEEkeywords}
 
 \section{Introduction}
-An electric field is a field created by the attraction and repulsion of the charges that inhabit the field. A force is exerted on everything within the field, and the strength of the charges and the distance between them decides the strength of this force. Electric potential is the difference in potential energy between two places in an electric field. Electric potential ($V$) can be derived from the electric field ($\vec{E}$) using the following equation that is wacky and wrong:
+Electric fields arise from the presence of electric charges and describe the force that a charge would experience within the region of influence \cite{tipler, barrons, ling-2016-university}. The strength of the electric field is determined by the magnitude and distribution of charges, as well as the distance from the source. Electric potential, on the other hand, represents the potential energy per unit charge at a point in the field and is related to the electric field through the equation \cite{tipler}:
 \begin{equation}
-V = -E \, dr
+V = -\int E \cdot dr.
+\label{eq:potential}
 \end{equation}
-Equipotential lines are lines with the same electric potential along the line. As seen in the aforementioned equation, electric field and electric potential point in opposite directions, as indicated with the negative sign. Along with the fact that the electric field and equipotential lines are perpendicular to each other, this means that the electric field always points out towards equipotential lines of lesser electric potential.
+\Cref{eq:potential} shows that electric potential is the integral of the electric field along a path, with the negative sign indicating that electric potential decreases in the direction of the field. Equipotential lines are defined as contours where the electric potential remains constant. These lines are always perpendicular to electric field lines, reflecting the fact that no work is required to move a charge along an equipotential surface. This property makes equipotential mapping a useful tool for visualizing the distribution of electric fields and potential in various setups.
+
+In this experiment, we used a polypropylene container filled with a saline solution as a conductive medium to simulate the behavior of electric potential and field in a simplified, accessible environment. Salt was added to enhance the conductivity of the water, ensuring a stable field for measurement. By placing conducting wires connected to a power supply in the tray, we created an electric field and measured the potential at various points using a multimeter. This allowed us to map the equipotential regions and explore their relationship with the electric field. The results gave us insights into how equipotential lines and their relationship to electric fields are critical in applications such as designing capacitors, grounding systems, and electrical shielding.
+
+
+
+
+
 
 \section{Methods and materials}
-In this experiment, we began by gathering a water tray, a \qty{12}{\volt} power supply, a multimeter, two insulated wires, and graph paper. To increase conductivity, we added a small amount of salt to the water, which helped create a more uniform electric field throughout the tray. We then positioned the graph paper beneath the tray to establish a grid, allowing us to measure and record voltage at precise coordinates. Next, we set up our circuit by connecting one insulated wire to the positive terminal of the power supply and submerging it at one end of the water tray, while the other wire, connected to the negative terminal, was placed at the opposite end. This setup generated an electric field across the tray. With our equipment ready, we set the multimeter to measure voltage and began by positioning its probe at a reference ground \qty{0}{\volt} point. From there, we measured the voltage at each point on the grid, moving outward from the ground point to cover various coordinates across the tray. We recorded the voltage readings at each coordinate, adjusting the power supply incrementally from \qtylist{3;6;9;12}{\volt} to observe how the potential changed with different voltages. We used the recorded data to create a 2-D map illustrating the equipotential regions within the tray. Finally, we analyzed the data to observe where the rate of potential change was highest compared to the flatter equipotential regions that formed as we moved farther from the source. This allowed us to identify specific equipotential regions where the potential remained almost constant, also indicating areas where the electric field does not change.
+To study electric potential and equipotential regions, we used a 3-cup polypropylene food container (EasyFind; Rubbermaid; Atlanta, GA) containing approximately \qty{500}{\milli\liter} of a weak saline solution prepared using ordinary tap water plus a pinch of sea salt. The polypropylene container acted as a prototype simulating the final electrophoresis rig. The aqueous salt solution acted as a stable conductive medium for electric field visualization, allowing the electric field to propagate more effectively and improving the consistency of voltage measurements across the tray. Container dimensions were approximately \qtyproduct{15x15}{\centi\meter}, ensuring sufficient space for accurate mapping of the potential. A small amount of blue food coloring (about five drops) was added to the water to improve visibility during the setup and ensure uniform distribution of the solution.
 
+Voltage was applied using a \qty{12}{\volt} DC power supply (model PS-28A), and the potentials were measured using a digital voltmeter (model HSPE-051 AC). A piece of graph paper beneath the container allowed for repeatably locating the measurement points, which were on \qtyproduct{1x1}{\centi\meter} grid squares. The circuit was set up by attaching one alligator lead to the positive terminal of the power supply and submerging it at one end of the tray, while the other was connected to the negative terminal and submerged at the opposite end. This configuration created an electric field across the tray. We placed the wires parallel to the graph paper's grid lines for consistency in measurements. Points of measurement (labeled 1 through 9) were marked at specific coordinates on the grid, spaced uniformly to facilitate data collection.
+
+Using a multimeter set to measure voltage, we started at a reference ground point (\qty{0}{\volt}) and systematically recorded the voltage at each grid intersection, moving outward from the ground point. Measurements were taken at incremental voltage settings of \qtylist{3;6;9;12}{\volt} adjusted at the power supply. This allowed us to observe how potential varied across the tray for different input voltages. Data collected at these points were used to plot a 2D map of the tray using the Matplotlib library in Python \cite{harris2020array,Hunter:2007}.
+%, highlighting equipotential regions as distinct bands. The areas of rapid potential change (near the electrodes) and flatter equipotential regions (farther from the electrodes) were analyzed. These observations were consistent with the expected behavior of the electric field and potential distribution in a conductive medium.
 \begin{figure}
 \centering
 \begin{minipage}{0.50\columnwidth}
     \includegraphics[width=\linewidth]{Fig1.png}
-    \caption{Image of Lab Setup}
+    \caption{Image of experimental setup}
     \label{fig:setup}
 \end{minipage}\hfill
 \begin{minipage}{0.50\columnwidth}
     \includegraphics[width=\linewidth]{Fig2.png}
-    \caption{Diagram of Setup}
+    \caption{Diagram of experimental setup}
     \label{fig:diagram}
 \end{minipage}
 \end{figure}
 
 
 
-\section{Resutlts}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\linewidth]{Fig3.png}
-    \caption{Recorded Voltage at Different Points}
-    \label{fig:voltage_data}
-\end{figure}
 
-The data collected at voltage levels of \qtylist{3;6;9;12}{\volt} showed a consistent increase in potential with distance from the ground point, reflecting how potential rises near the source and weakens as it spreads outward. For example, at \qty{3}{\volt}, the potential increased from \qty{0.53}{\volt} at Point 1 to \qty{1.48}{\volt}Vat Point 9. At higher voltage levels, such as \qty{9}{\volt}, potential rose from \qty{3.47}{\volt} at Point 1 to \qty{7.98}{\volt} at Point 9, although some outliers such as \qty{15.2}{\volt} at Point 3 suggest that there were field variations or that the data was misread.
 
-Using this data, we constructed a 2-D map of equipotential regions, where areas with similar potential are represented as color-coded bands. In the map, potential changes most rapidly near the electrodes, where the electric field is strongest, shown by tightly packed color bands. As the distance from the source increases, the potential changes more gradually, creating broader equipotential regions that are farther apart, reflecting a weakening electric field. Adding salt to the water enhanced conductivity, creating a stable field environment for more consistent measurements. 
 
+\section{Results}
+As shown in \cref{tab:voltage_data}, the data collected at input voltage levels of \qtylist{3;6;9;12}{\volt} consistently showed an increase in potential as the distance from the ground point increased. For example, at \qty{3}{\volt}, the potential ranged from \qty{0.53}{\volt} at Point 1 to \qty{1.48}{\volt} at Point 9. At \qty{9}{\volt}, the potential rose from \qty{3.47}{\volt} at Point 1 to \qty{7.98}{\volt} at Point 9. However, there were outliers, such as a value of \qty{15.2}{\volt} at Point 3. This suggests either variations in field uniformity or higher concentrations of salinity in that region. It is also unclear how we observe voltages higher than the power supply output (e.g. point 6). 
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.9\linewidth]{Fig3.png}
+%    \caption{Recorded Voltage at Different Points}
+%    \label{fig:voltage_data}
+%\end{figure}
+\begin{table}
+\caption{Recorded voltage (\unit{\volt}) at different points}
+\label{tab:voltage_data}
+\begin{center}
+\scriptsize
+\begin{tabular}{lccccccccc}
+\toprule
+& \multicolumn{9}{c}{measurement point} \\
+\unit{\volt} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+\midrule
+0  & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+3  & 0.53 & 1.02 & 1.35 & 0.28 & 1.05 & 2.95 & 0.63 & 0.98 & 1.48 \\
+6  & 2.02 & 3.27 & 4.48 & 2.08 & 3.28 & 8.97 & 2.48 & 3.29 & 4.55 \\
+9  & 3.47 & 5.52 & 15.2 & 3.63 & 5.57 & 18.9 & 3.45 & 5.47 & 7.87 \\
+12 & 4.79 & 7.78 & 9.47 & 5.12 & 7.72 & 21.15 & 4.55 & 10.2 & 10.53 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+The data from \cref{tab:voltage_data} are plotted in \cref{fig:equipotential_map}, which visually represents the regions of equal electric potential across the water tray. Though \cref{fig:equipotential_map} does not depict level curves of equal potential, we hypothesize that equipotential lines are more tightly packed near the electrodes, indicating steep potential gradients and stronger electric fields. As the distance from the electrodes increases, the equipotential lines become more widely spaced, reflecting weaker electric fields and more gradual potential changes.
+%Using this data, we constructed a 2-D map of equipotential regions, where areas with similar potential are represented as color-coded bands. In the map, potential changes most rapidly near the electrodes, where the electric field is strongest, shown by tightly packed color bands. As the distance from the source increases, the potential changes more gradually, creating broader equipotential regions that are farther apart, reflecting a weakening electric field. Adding salt to the water enhanced conductivity, creating a stable field environment for more consistent measurements. 
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{Fig4.png}
-    \caption{Equipotential Map}
+    \caption{Equipotential map of data in \cref{tab:voltage_data}}
     \label{fig:equipotential_map}
 \end{figure}
 
+
+
+
+
+
 \section{Discussion}
-The stronger electric field near the electrodes is marked by steeper potential gradients, while farther regions, with slower potential shifts, indicate weaker fields. The inferred electric field lines would radiate outward from the positive terminal and converge at the negative, crossing equipotential surfaces perpendicularly. This pattern aligns with the theoretical relationship between electric fields and equipotentials, demonstrating how electric field strength correlates with the rate of potential change in a conductive medium.
+The potential changes most rapidly near the electrodes, where the electric field strength is highest. This is evident in the tightly packed equipotential lines close to the voltage sources in \cref{fig:equipotential_map}. Farther from the electrodes, the potential change becomes more gradual, as reflected in the broader spacing between lines. This indicates a diminishing electric field strength as distance from the source increases.
+
+%Salt was added to the water to increase its conductivity, ensuring a uniform and stable conductive medium. The salt ions facilitated current flow, allowing the electric field to propagate more effectively and improving the consistency of voltage measurements across the tray.
+
+The electric field radiates outward from the positive terminal and converges at the negative terminal. The regions with steeper potential gradients correspond to stronger electric fields, while flatter potential regions indicate weaker fields. This relationship reflects the fundamental correlation between electric fields and the rate of change of potential. From our observations, we infer that electric field lines would radiate outward from the positive terminal and converge at the negative, crossing equipotential surfaces perpendicularly. This pattern aligns with the theoretical relationship \cite{ling-2016-university, tipler} between electric fields and equipotentials. 
+%, demonstrating how electric field strength correlates with the rate of potential change in a conductive medium.
+%, highlighting equipotential regions as distinct bands. The areas of rapid potential change (near the electrodes) and flatter equipotential regions (farther from the electrodes) were analyzed. These observations were consistent with the expected behavior of the electric field and potential distribution in a conductive medium.
+
+
+
+
+
+
 
 \section{Conclusion}
-The experiment effectively demonstrated the idea of equipotential lines. The electric potential along a theoretical equipotential line stayed somewhat constant, proving how electric potential is the same along an equipotential line. Even with this, the experiment could have been improved. The voltmeter at some points seemed to not be very precise, and the power supply may have been supplying a slightly incorrect voltage due to wear and tear. In addition, human error would have caused some incorrect readings with the voltage. If this experiment were to be conducted again, more modern technology could be used, along with more precise measuring.
+The experiment effectively demonstrated the idea of equipotential lines. The electric potential along a theoretical equipotential line stayed somewhat constant, proving how electric potential is the same along an equipotential line. Even with this, the experiment could have been improved. The voltmeter at some points seemed to not be very precise, and the power supply may have been supplying a slightly incorrect voltage due to wear and tear. In addition, human error in terms of correct probe placement would have caused some incorrect readings with the voltage. If this experiment were to be conducted again, more modern technology could be used, along with more precise measuring.
+
+
+
+
+
 
 \section{Acknowledgement}
-We thank several anonymous reviewers whose comments helped our manuscript.  RC did data analysis. SM wrote the conclusions. JH plotted the results. EH wrote the introduction. NP plotted the results. DG analyzed results. NG wrote the methods and materials.  
+We thank several anonymous reviewers whose comments helped our manuscript.  All authors did data collection. RC did data analysis and wrote the discussion. SM wrote the conclusions. JH plotted the results. EH wrote the introduction. NP plotted the results and wrote materials. DG analyzed results and wrote the abstract. NG wrote the methods.  
 
 \nocite{tipler}
 \bibliographystyle{IEEEtran}
 \bibliography{lab.bib}
-
+\vspace{0.6in}
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{rcohen.jpeg}}]{Ryan Cohen} is a senior in the Science and Engineering Magnet Program at Manalapan High School and has completely redesigned NYC Pier 6. 
 \end{IEEEbiography}
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{smusuku.jpeg}}]{Shreyas Musuku} is a senior in the Science and Engineering Magnet Program at Manalapan High School and enjoys the magical world of wearable computers for first responders. 
 \end{IEEEbiography}
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{jhammer.jpeg}}]{Justin Hammer} is a senior in the Science and Engineering Magnet Program at Manalapan High School and enjoys the magical world of aneurysms. 
 \end{IEEEbiography}
+\vfill
+\newpage
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{ehandique.jpeg}}]{Eshan Handique} is a senior in the Science and Engineering Magnet Program at Manalapan High School and enjoys the magical world of aneurysms. 
 \end{IEEEbiography}
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{npatel.jpeg}}]{Nirvik Patel} is a senior in the Science and Engineering Magnet Program at Manalapan High School and enjoys the magical world of using news and events to predict currency markets. 
 \end{IEEEbiography}
-\vfill\newpage
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{dgandhi.jpeg}}]{Dilan Gandhi} is a senior in the Science and Engineering Magnet Program at Manalapan High School and must unlearn what he has learned. 
 \end{IEEEbiography}
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{ngershteyn.jpeg}}]{Nathan Gershteyn} is a senior in the Science and Engineering Magnet Program at Manalapan High School and enjoys the magical word of using news and events to predict currency markets. 
